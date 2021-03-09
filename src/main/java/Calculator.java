@@ -1,3 +1,6 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
 public class Calculator {
@@ -19,7 +22,10 @@ public class Calculator {
         }
     }
 
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
+
     public static double squareRoot(double num) {
+        logger.info("Performing square root operation on "+num);
         return Math.sqrt(num);
     }
 }
