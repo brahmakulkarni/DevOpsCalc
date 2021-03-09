@@ -1,0 +1,8 @@
+---
+- name: Pull Docker image of DevOpsCalc
+  hosts: all
+  tasks:
+    - name: Pull image calcdevops image
+      docker_image:
+        name: brahma99/calcdevops
+        source: pull
