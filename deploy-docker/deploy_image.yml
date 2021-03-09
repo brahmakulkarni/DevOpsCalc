@@ -1,6 +1,6 @@
 ---
 - name: Pull Docker image of DevOpsCalc
-  hosts: localhost
+  hosts: all
   tasks:
     - name: Pull image calcdevops image
       docker_image:
