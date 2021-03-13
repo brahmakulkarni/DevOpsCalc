@@ -61,7 +61,7 @@ public class Calculator {
     public static int factorial(int num) {
         logger.info("Performing factorial operation on "+num);
         int ret = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= num; i++) {
             ret *= i;
         }
         return ret;
