@@ -60,10 +60,11 @@ public class Calculator {
 
     public static int factorial(int num) {
         logger.info("Performing factorial operation on "+num);
-        if (num == 0) {
-            return 1;
+        int ret = 1;
+        for (int i = 1; i <= n; i++) {
+            ret *= i;
         }
-        return num*factorial(num-1);
+        return ret;
     }
 
     public static double nLog(double num) {
