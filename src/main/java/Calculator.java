@@ -5,45 +5,50 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        System.out.println("Enter the option you want to choose:");
-        System.out.println("1. Square Root");
-        System.out.println("2. Factorial (of an integer)");
-        System.out.println("3. Natural logarithm");
-        System.out.println("4. Power function");
-        System.out.println("5. Leave");
+        int toggle = 0;
+        do {
+            System.out.println("Enter the option you want to choose:");
+            System.out.println("1. Square Root");
+            System.out.println("2. Factorial (of an integer)");
+            System.out.println("3. Natural logarithm");
+            System.out.println("4. Power function");
+            System.out.println("5. Leave");
 
-        Scanner in = new Scanner(System.in);
-        int option = in.nextInt();
+            Scanner in = new Scanner(System.in);
+            int option = in.nextInt();
 
-        switch (option) {
-            case 1:
-                System.out.println("Enter the number: ");
-                double x = in.nextDouble();
-                System.out.println("The Square Root of "+ x + " is: "+ squareRoot(x));
-                break;
-            case 2:
-                System.out.println("Enter the number (an integer): ");
-                int y = in.nextInt();
-                System.out.println("The Factorial of "+ y + " is: "+ factorial(y));
-                break;
-            case 3:
-                System.out.println("Enter the number: ");
-                double z = in.nextDouble();
-                System.out.println("The Natural Logarithm of "+ z + " is: "+ nLog(z));
-                break;
-            case 4:
-                System.out.println("Enter the base: ");
-                double a = in.nextDouble();
-                System.out.println("Enter the exponent: ");
-                double b = in.nextDouble();
-                System.out.println(a + " raised to the power of "+ b + " is: "+ power(a,b));
-                break;
-            case 5:
-                System.out.println("Fin");
-                break;
-            default:
-                System.out.println("Invalid Option. Please try again.");
-        }
+            switch (option) {
+                case 1:
+                    System.out.println("Enter the number: ");
+                    double x = in.nextDouble();
+                    System.out.println("The Square Root of "+ x + " is: "+ squareRoot(x));
+                    break;
+                case 2:
+                    System.out.println("Enter the number (an integer): ");
+                    int y = in.nextInt();
+                    System.out.println("The Factorial of "+ y + " is: "+ factorial(y));
+                    break;
+                case 3:
+                    System.out.println("Enter the number: ");
+                    double z = in.nextDouble();
+                    System.out.println("The Natural Logarithm of "+ z + " is: "+ nLog(z));
+                    break;
+                case 4:
+                    System.out.println("Enter the base: ");
+                    double a = in.nextDouble();
+                    System.out.println("Enter the exponent: ");
+                    double b = in.nextDouble();
+                    System.out.println(a + " raised to the power of "+ b + " is: "+ power(a,b));
+                    break;
+                case 5:
+                    System.out.println("Fin");
+                    toggle = 1;
+                    break;
+                default:
+                    System.out.println("Invalid Option. Please try again.");
+            }
+        } while (toggle == 0);
+
     }
 
     private static final Logger logger = LogManager.getLogger(Calculator.class);
