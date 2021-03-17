@@ -1,0 +1,8 @@
+17/Mar/2021:06:07:10 957 [Calculator.java] [INFO] Calculator Performing square root operation on 64.0
+17/Mar/2021:06:07:10 980 [Calculator.java] [INFO] Calculator Result of square root operation on 64.0 is: 8.0
+17/Mar/2021:06:07:15 289 [Calculator.java] [INFO] Calculator Performing factorial operation on 3
+17/Mar/2021:06:07:15 290 [Calculator.java] [INFO] Calculator Result of factorial operation on 3 is: 6
+17/Mar/2021:06:07:18 061 [Calculator.java] [INFO] Calculator Performing natural logarithm operation on 10.0
+17/Mar/2021:06:07:18 062 [Calculator.java] [INFO] Calculator Result of natural logarithm operation on 10.0 is: 2.302585092994046
+17/Mar/2021:06:07:34 631 [Calculator.java] [INFO] Calculator Performing power operation on 2.0,3.0
+17/Mar/2021:06:07:34 632 [Calculator.java] [INFO] Calculator Result of power operation on 2.0,3.0 is: 8.0
