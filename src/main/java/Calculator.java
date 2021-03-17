@@ -55,7 +55,9 @@ public class Calculator {
 
     public static double squareRoot(double num) {
         logger.info("Performing square root operation on "+num);
-        return Math.sqrt(num);
+        double ret =  Math.sqrt(num);
+        logger.info("Result of square root operation on "+num+" is: "+ret);
+        return ret;
     }
 
     public static int factorial(int num) {
@@ -64,16 +66,21 @@ public class Calculator {
         for (int i = 1; i <= num; i++) {
             ret *= i;
         }
+        logger.info("Result of factorial operation on "+num+" is: "+ret);
         return ret;
     }
 
     public static double nLog(double num) {
         logger.info("Performing natural logarithm operation on "+num);
-        return Math.log(num);
+        double ret = Math.log(num);
+        logger.info("Result of natural logarithm operation on "+num+" is: "+ret);
+        return ret;
     }
 
     public static double power(double x, double y) {
         logger.info("Performing power operation on "+ x + "," + y);
-        return Math.pow(x,y);
+        double ret =  Math.pow(x,y);
+        logger.info("Result of power operation on "+ x + "," + y + " is: " + ret);
+        return ret;
     }
 }
